@@ -6,8 +6,6 @@
 //
 import SwiftUI
 
-/// SwiftUI
-/**   jwdsfds*/
 
 
 struct ContentView: View {

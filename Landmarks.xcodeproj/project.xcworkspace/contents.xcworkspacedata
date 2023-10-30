@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/petia/XcodeProjects/Landmarks/Landmarks/ModelData.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/petia/XcodeProjects/Landmarks/Landmarks/landmarkData.json">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
