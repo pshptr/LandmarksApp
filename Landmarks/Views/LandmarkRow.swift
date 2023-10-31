@@ -24,33 +24,20 @@ struct LandmarkRow: View {
 
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
-        // Use a ForEach loop to create multiple previews
-        ForEach(landmarks, id: \.id) { landmark in
-            LandmarkRow(landmark: landmark)
+        VStack {
+            Group {
+                LandmarkRow(landmark: landmarks[0])
+                    .previewDisplayName("TurtleRock")
+                LandmarkRow(landmark: landmarks[1])
+                    .previewDisplayName("SilverSalmonCreek")
+            }
         }
     }
 }
-//struct LandmarkRow_Previews: PreviewProvider {
-//    static var previews: some View {
+
+//#Preview {
+//    Group {
 //        LandmarkRow(landmark: landmarks[0])
-//    }
-//
-//    static var previews: some View {
-//            LandmarkRow(landmark: landmarks[1])
-//        }
-//}
-
-//#Preview{
-//    LandmarkRow(landmark: landmarks[0])
-//}
-
-
-//#Preview{
-//    LandmarkRow(landmark: landmarks[1])
-//}
-
-//struct LandmarkRow_Previews: PreviewProvider {
-//    static var previews: some View {
 //        LandmarkRow(landmark: landmarks[1])
 //    }
 //}
