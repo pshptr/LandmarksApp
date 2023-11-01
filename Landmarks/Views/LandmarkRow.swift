@@ -34,10 +34,3 @@ struct LandmarkRow_Previews: PreviewProvider {
         }
     }
 }
-
-//#Preview {
-//    Group {
-//        LandmarkRow(landmark: landmarks[0])
-//        LandmarkRow(landmark: landmarks[1])
-//    }
-//}

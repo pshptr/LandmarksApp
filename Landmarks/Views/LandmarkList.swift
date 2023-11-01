@@ -1,8 +1,8 @@
 //
-//  LandmarksList.swift
+//  LandmarkList.swift
 //  Landmarks
 //
-//  Created by Petia on 31.10.23.
+//  Created by Petia on 1.11.23.
 //
 
 import SwiftUI
@@ -10,9 +10,9 @@ import SwiftUI
 struct LandmarkList: View {
     var body: some View {
         NavigationView {
-            List (landmarks) { landmark in
-                NavigationLink (destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow (landmark: landmark)
+            List(landmarks) { landmark in
+                NavigationLink(destination: LandmarkDetail()) {
+                    LandmarkRow(landmark: landmark)
                 }
             }
             .navigationTitle("Landmarks")
@@ -21,7 +21,7 @@ struct LandmarkList: View {
     }
 }
 
-struct LandmarksList_Previews: PreviewProvider {
+struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkList()
     }
